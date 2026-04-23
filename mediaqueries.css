@@ -59,6 +59,13 @@
   article {
     font-size: 1rem;
   }
+  .skill-card i {
+    font-size: 2rem;
+  }
+  .article-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;

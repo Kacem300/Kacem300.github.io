@@ -206,6 +206,20 @@ section {
   gap: 1rem;
 }
 
+.github-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.github-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgb(85, 85, 85);
+}
+
 /* ICONS */
 
 .icon {
@@ -334,23 +348,66 @@ section {
 }
 
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  text-align: center;
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 120px;
   gap: 0.5rem;
+  text-align: center;
 }
 
 article .icon {
   cursor: default;
+}
+
+.skill-card {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(163, 163, 163, 0.3);
+  transition: all 300ms ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card i,
+.custom-icon-text {
+  font-size: 2rem; /* Reduced slightly to fit 3 characters like K8s */
+  color: rgb(53, 53, 53);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  line-height: 1;
+}
+
+.skill-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.25rem 0;
+  color: rgb(0, 0, 0);
+}
+
+.skill-card p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: rgb(120, 120, 120);
 }
 
 /* PROJECTS SECTION */
