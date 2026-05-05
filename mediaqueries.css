@@ -1,4 +1,8 @@
 @media screen and (max-width: 1400px) {
+  #projects .about-containers {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller desktops */
+    gap: 2rem;
+  }
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -47,6 +51,13 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .experience-details-container .about-containers,
+  #projects .about-containers {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -73,7 +84,11 @@
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
+    display: flex; /* Ensure they stay flex for other sections */
     flex-wrap: wrap;
+  }
+  .experience-details-container .about-containers {
+    grid-template-columns: 1fr; /* Switch to 1 column on mobile */
   }
   .contact-info-container {
     margin: 0;
