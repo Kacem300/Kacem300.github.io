@@ -82,7 +82,10 @@ const projectsData = [
         description: 'A cloud automation project still in progress. Built a comprehensive infrastructure with 1 controller and 4 compute nodes plus 1 storage node. Created instances and deployed Ansible playbooks to automate Docker, Kubernetes, Grafana, and Prometheus installation. Developed a website and currently deploying it across the infrastructure.',
         basePath: './assets/cloud automation/',
         images: [
-            { path: 'image.png', label: 'Cloud Automation Overview' }
+            { path: 'image.png', label: 'Cloud Automation Overview' },
+            { path: 'Hardware.png', label: 'Hardware Architecture' },
+            { path: 'Hardware2.png', label: 'Infrastructure Setup' },
+            { path: 'Hardware3.png', label: 'System Configuration' }
         ]
     },
     {
