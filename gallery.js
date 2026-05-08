@@ -2,6 +2,7 @@ const projectsData = [
     {
         id: 'the-valley',
         name: 'The Valley',
+        description: 'An e-commerce platform featuring a comprehensive admin dashboard for product and user management, alongside a user-friendly interface for browsing, purchasing, and reviewing products. Built with Angular frontend and Spring Boot backend.',
         basePath: './assets/The Valley project/',
         images: [
             { path: 'Admin/AddProducts.png', label: 'Admin - Add Products' },
@@ -28,6 +29,7 @@ const projectsData = [
     {
         id: 'naksha',
         name: 'Naksha',
+        description: 'A modern e-commerce website showcasing products with an intuitive shopping experience. Features product listing, detailed product views, shopping cart management, and customer information pages. Built with responsive design and smooth user interactions.',
         basePath: './assets/Naksha/',
         images: [
             { path: 'front1.png', label: 'Homepage' },
@@ -43,6 +45,7 @@ const projectsData = [
     {
         id: 'support-management',
         name: 'Support Management Aftercode',
+        description: 'A cross-platform support ticketing system with web dashboard and mobile app. Enables users to create, track, and manage support tickets with priorities, categories, and real-time notifications. Features include knowledge base, user feedback, and comprehensive ticket history.',
         basePath: './assets/Support-management-Aftercode/',
         images: [
             { path: 'Screenshot 2025-10-17 111531.png', label: 'Dashboard Overview' },
@@ -71,6 +74,34 @@ const projectsData = [
             { path: 'Screenshot_2025-10-17-11-14-21-861_com.example.support_management.jpg', label: 'Mobile - Notifications' },
             { path: 'Screenshot_2025-10-17-11-14-34-071_com.google.android.permissioncontroller.jpg', label: 'Mobile - Permissions' },
             { path: 'Screenshot_2025-10-17-11-14-51-594_com.example.support_management.jpg', label: 'Mobile - Help Center' }
+        ]
+    },
+    {
+        id: 'cloud-automation',
+        name: 'Cloud Automation',
+        description: 'A cloud automation project still in progress. Built a comprehensive infrastructure with 1 controller and 4 compute nodes plus 1 storage node. Created instances and deployed Ansible playbooks to automate Docker, Kubernetes, Grafana, and Prometheus installation. Developed a website and currently deploying it across the infrastructure.',
+        basePath: './assets/cloud automation/',
+        images: [
+            { path: 'image.png', label: 'Cloud Automation Overview' }
+        ]
+    },
+    {
+        id: 'security-kali',
+        name: 'Security Kali - pfSense',
+        description: 'A comprehensive security project demonstrating network security configuration and firewall management using pfSense. Features firewall rules, network routing, VPN setup, and advanced security policies for enterprise-level network protection.',
+        basePath: './assets/Security Kali project/',
+        images: [
+            { path: 'Pfsense.png', label: 'pfSense Dashboard' },
+            { path: 'Pfsense1.png', label: 'Firewall Configuration' },
+            { path: 'Pfsense2.png', label: 'Network Routing' },
+            { path: 'Pfsense3.png', label: 'System Settings' },
+            { path: 'Pfsense4.png', label: 'Firewall Rules' },
+            { path: 'pfesense5.png', label: 'Security Policies' },
+            { path: 'pfsense6.png', label: 'Network Interfaces' },
+            { path: 'pfsense7.png', label: 'System Monitoring' },
+            { path: 'pfsense8.png', label: 'Advanced Configuration' },
+            { path: 'pfsense9.png', label: 'Network Monitoring' },
+            { path: 'pfsense10.png', label: 'Security Dashboard' }
         ]
     }
 ];
@@ -111,6 +142,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const h2 = document.createElement('h2');
             h2.textContent = project.name;
             section.appendChild(h2);
+
+            // Add project description
+            if (project.description) {
+                const descriptionDiv = document.createElement('div');
+                descriptionDiv.className = 'project-description';
+                descriptionDiv.textContent = project.description;
+                section.appendChild(descriptionDiv);
+            }
 
             const grid = document.createElement('div');
             grid.className = 'image-grid';
