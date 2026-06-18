@@ -85,7 +85,17 @@ const projectsData = [
             { path: 'image.png', label: 'Cloud Automation Overview' },
             { path: 'Hardware.png', label: 'Hardware Architecture' },
             { path: 'Hardware2.png', label: 'Infrastructure Setup' },
-            { path: 'Hardware3.png', label: 'System Configuration' }
+            { path: 'Hardware3.png', label: 'System Configuration' },
+            { path: 'image (2).png', label: 'Deployment Configuration' },
+            { path: 'Screenshot 2026-05-11 170116 (1).png', label: 'Infrastructure Monitoring' },
+            { path: 'Screenshot 2026-05-11 170223 (1).png', label: 'System Dashboard' },
+            { path: 'Screenshot 2026-05-11 175141 (1).png', label: 'Node Configuration 1' },
+            { path: 'Screenshot 2026-05-11 175159 (1).png', label: 'Node Configuration 2' },
+            { path: 'Screenshot 2026-05-11 175239 (1).png', label: 'Container Orchestration' },
+            { path: 'Screenshot 2026-05-11 175246 (1).png', label: 'Service Status' },
+            { path: 'Screenshot 2026-05-11 175258 (1).png', label: 'Performance Metrics' },
+            { path: 'Screenshot 2026-05-11 175349 (1).png', label: 'Network Configuration' },
+            { path: 'Screenshot 2026-05-11 175358 (1).png', label: 'Deployment Status' }
         ]
     },
     {
