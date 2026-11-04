@@ -166,6 +166,29 @@ const projectsData = [
             { path: 'Capture d\'écran 2026-05-05 183856.png', label: 'User Activity' },
             { path: 'Capture d\'écran 2026-05-05 183942.png', label: 'Final Overview' }
         ]
+    },
+    {
+        id: 'cloud-security',
+        name: 'Securing a Private Cloud Infrastructure',
+        description: 'An engineering internship project that automated a private OpenStack cloud on Hetzner servers and secured access with WireGuard. OpenLDAP provides a centralized directory, while Keycloak enables single sign-on for OpenStack Horizon and Odoo through OIDC and LDAP federation. Terraform and Ansible make the infrastructure reproducible, and Docker Compose runs the identity and application services.',
+        basePath: './assets/Cloud Security/',
+        images: [
+            { path: 'Hetzner OpenStack Physical Deployment Architecture (2) - Copy.png', label: 'Physical Deployment Architecture' },
+            { path: 'archet_Logique - Copy.png', label: 'Logical Architecture' },
+            { path: 'HetznerFirewall - Copy.png', label: 'Hetzner Firewall Configuration' },
+            { path: 'keycloack overview - Copy.png', label: 'Keycloak Identity Provider' },
+            { path: 'horizon integreated with kc - Copy.png', label: 'OpenStack Horizon SSO Integration' },
+            { path: 'odoo integrated with kc - Copy.png', label: 'Odoo Keycloak Integration' },
+            { path: 'wireguard master config - Copy.png', label: 'WireGuard VPN Server' },
+            { path: 'wireguard client linux config  - Copy.png', label: 'WireGuard Linux Client' },
+            { path: 'wireguard windows client config - Copy.png', label: 'WireGuard Windows Client' },
+            { path: 'Picture4.png', label: 'Cloud Infrastructure' },
+            { path: 'Picture8 - Copy.png', label: 'Security Configuration' },
+            { path: 'Screenshot 2026-07-30 170140.png', label: 'Infrastructure Deployment' },
+            { path: 'Screenshot 2026-08-24 005707.png', label: 'Identity Management' },
+            { path: 'Screenshot 2026-08-25 234511.png', label: 'Application Integration' },
+            { path: 'Screenshot 2026-10-08 181104.png', label: 'Project Results' }
+        ]
     }
 ];
 
